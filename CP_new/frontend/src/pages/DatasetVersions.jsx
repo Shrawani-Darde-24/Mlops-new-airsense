@@ -46,7 +46,7 @@ export default function DatasetVersions() {
 
   useEffect(() => {
     refresh();
-    const timer = window.setInterval(refresh, 5000);
+    const timer = window.setInterval(refresh, 5 * 60 * 1000);
     return () => window.clearInterval(timer);
   }, [refresh]);
 
@@ -76,7 +76,7 @@ export default function DatasetVersions() {
           <p>Sync DVC snapshots and review dataset changes over time.</p>
         </div>
         <div className="actions">
-          <span className="live"><i /> Live monitoring · 5 sec</span>
+          <span className="live"><i /> Live monitoring · 5 min</span>
           <button onClick={sync} disabled={syncing}>
             {syncing ? 'Syncing…' : '↻ Sync to GitHub + DVC'}
           </button>
@@ -100,7 +100,7 @@ export default function DatasetVersions() {
         </div>
         <div className="details">
           <div className="detail"><small>DATASET</small><b>{stats?.dataset || 'test_dataset.csv'}</b><small>SOURCE PATH</small><code>{stats?.path || 'data/test_dataset.csv'}</code></div>
-          <div className="detail"><small>TRACKING</small><b>DVC snapshots + Git commits</b><small>AUTO REFRESH</small><b>Every 5 seconds</b></div>
+          <div className="detail"><small>TRACKING</small><b>DVC snapshots + Git commits</b><small>AUTO REFRESH</small><b>Every 5 minutes</b></div>
         </div>
       </section>
 
@@ -139,3 +139,4 @@ function Stat({ label, value, foot }) {
 function Empty({ children }) {
   return <div className="empty">{children}</div>;
 }
+

@@ -1,5 +1,23 @@
 [
   {
+    "detected_at": "2026-10-24T18:16:03+05:30",
+    "dataset": "test_dataset.csv",
+    "path": "data\\test_dataset.csv",
+    "old_rows": 120,
+    "new_rows": 144,
+    "added_rows": 24,
+    "removed_rows": 0,
+    "changed_records": 24,
+    "changed_columns": [
+      "NO2",
+      "target_1h",
+      "wind_gusts_10m_ms",
+      "wind_speed_10m_ms"
+    ],
+    "added_columns": [],
+    "removed_columns": []
+  },
+  {
     "detected_at": "2026-10-24T18:11:08+05:30",
     "dataset": "test_dataset.csv",
     "path": "data\\test_dataset.csv",

@@ -1,0 +1,21 @@
+[
+  {
+    "detected_at": "2026-10-24T18:11:08+05:30",
+    "dataset": "test_dataset.csv",
+    "path": "data\\test_dataset.csv",
+    "old_rows": 96,
+    "new_rows": 120,
+    "added_rows": 24,
+    "removed_rows": 0,
+    "changed_records": 25,
+    "changed_columns": [
+      "NH3",
+      "NO2",
+      "O3",
+      "PM2.5",
+      "target_1h"
+    ],
+    "added_columns": [],
+    "removed_columns": []
+  }
+]

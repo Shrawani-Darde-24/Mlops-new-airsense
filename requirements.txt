@@ -1,0 +1,11 @@
+# AirSense AI — Python dependencies
+#
+# Derived from imports across all Python files in the target repository
+# (Shrawani-Darde-24/Mlops-new-airsense):
+#   CP_new/backend/main.py
+#   CP_new/data/append_hourly_data.py
+#   CP_new/data/generate_air_quality_data.py
+
+pandas>=2.0
+numpy>=1.24
+fastapi>=0.110

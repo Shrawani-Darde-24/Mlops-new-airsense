@@ -1,5 +1,24 @@
 [
   {
+    "detected_at": "2026-10-26T18:10:29+05:30",
+    "dataset": "test_dataset.csv",
+    "path": "data\\test_dataset.csv",
+    "old_rows": 168,
+    "new_rows": 192,
+    "added_rows": 24,
+    "removed_rows": 0,
+    "changed_records": 48,
+    "changed_columns": [
+      "O3",
+      "pm25_roll_mean_6h",
+      "target_1h",
+      "target_6h",
+      "temperature_2m_c"
+    ],
+    "added_columns": [],
+    "removed_columns": []
+  },
+  {
     "detected_at": "2026-10-24T18:16:03+05:30",
     "dataset": "test_dataset.csv",
     "path": "data\\test_dataset.csv",
